@@ -1,17 +1,27 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+      - name: Commit built assets
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -B deploy
+          git commit -m "Build front-end assets"
+          git push -f origin deploy
+      - name: Deploy to production
+        uses: appleboy/ssh-action@master
+        with:
+          username: admin
+          host: 193.164.131.137
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: 'cd /home/admin/git-repos/pankajjha_me.git && ./server_deploy.sh'
