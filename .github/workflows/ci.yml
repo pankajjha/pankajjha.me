@@ -16,6 +16,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout -B deploy
+          git add -f .
           git commit -m "Build front-end assets"
           git push -f origin deploy
       - name: Deploy to production
