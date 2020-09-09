@@ -23,4 +23,4 @@ jobs:
           username: admin
           host: 193.164.131.137
           password: ${{ secrets.SSH_PASSWORD }}
-          script: 'cd /home/admin/git-repos/pankajjha_me.git && ./server_deploy.sh'
+          script: 'cd /home/admin/git-repos/pankajjha_me.git && sh server_deploy.sh'
