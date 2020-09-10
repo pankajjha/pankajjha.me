@@ -12,7 +12,7 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-  - cp .env.travis .env
+  #- cp .env.travis .env
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
   - nvm install 7.7.1
@@ -22,10 +22,10 @@ before_script:
 
 # Commands you want to run that will verify your build.
 script:
-  - vendor/bin/phpunit --coverage-text
-  - phpcs --ignore=app/Http/Controllers/Auth,app/Http/Controllers/Controller.php app/Http/Controllers
+  #- vendor/bin/phpunit --coverage-text
+  #- phpcs --ignore=app/Http/Controllers/Auth,app/Http/Controllers/Controller.php app/Http/Controllers
   - npm run production
-  - jshint resources/assets/js/modules/*
+  #- jshint resources/assets/js/modules/*
 
 # Customize when the notification emails are sent.
 notifications:
