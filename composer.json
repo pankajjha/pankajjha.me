@@ -1,0 +1,13 @@
+{
+    "name": "pankajjha/pankajjha_me",
+    "authors": [
+        {
+            "name": "pankajjha",
+            "email": "pankajjha.145@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": ["mix.php"]
+    }
+}
