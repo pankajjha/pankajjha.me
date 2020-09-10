@@ -221,7 +221,10 @@
 						<a target="_blank" href="http://pankajjha145.blogspot.com/"><span class="fab fa-blogger-b"></span></a>
 						<a target="_blank" href="https://instagram.com/pankajjha145"><span class="fab fa-instagram"></span></a>
 					</div>
-								
+
+                    <div>
+                        <a title="Realtime application protection" href="https://www.sqreen.com/?utm_source=badge"><img style="width:109px;height:36px" src="https://s3-eu-west-1.amazonaws.com/sqreen-assets/badges/20171107/sqreen-mono-badge.svg" alt="Sqreen | Runtime Application Protection" /></a>
+                    </div>
 					<!-- profile buttons -->
 					<div class="lnks">
 						<!-- Calendly link widget begin -->
