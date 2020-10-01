@@ -276,7 +276,7 @@
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="info-list">
 									<ul>
-										<li><strong>Age . . . . .</strong> 26</li>
+										<li><strong>Age . . . . .</strong> 27</li>
 										<li><strong>Residence . . . . .</strong> India</li>
 										<li><strong>Freelance . . . . .</strong> Available</li>
 										<li><strong>Address . . . . .</strong> Delhi, India</li>
@@ -339,7 +339,7 @@
 									<div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
 									<div class="name">Digital Marketing and SEO</div>
 									<p>
-										I have pretty good experience with Digital marketing and SEO. You don't have to worry on promoting your brand when I am handling your project, It comes FREE with the project.
+										I have pretty good experienced with Digital marketing and SEO. You don't have to worry on promoting your brand when I am handling your project, It comes FREE with the project.
 									</p>
 								</div>
 							</div>
@@ -356,6 +356,7 @@
 
 						<!-- title -->
 						<div class="title">Pricing</div>
+						<div class="name">You can book free consultation call for your project</div>
 
 						<!-- content -->
 						<div class="row pricing-items">
@@ -367,23 +368,19 @@
 									<div class="name">Basic</div>
 									<div class="amount">
 										<span class="dollar">$</span>
-										<span class="number">22</span>
+										<span class="number">10</span>
 										<span class="period">hour</span>
 									</div>
 									<div class="feature-list">
 										<ul>
+											<li>Troubleshooting</li>
+											<li>Bug Fixing</li>
 											<li>Web Development</li>
-											<li>Advetising</li>
-											<li>Game Development</li>
-											<li class="disable">Music Writing</li>
-											<li class="disable">Photography <strong>new</strong></li>
+											<li>Website SEO & Review</li>
+											<li class="disable">Android Apps Development</li>
+											<li class="disable">IOS Apps Development</li>
+											<li class="disable">Node.js Development</li>
 										</ul>
-									</div>
-									<div class="lnks">
-										<a href="#" class="lnk">
-											<span class="text">Buy Basic</span>
-											<i class="ion ion-speedometer speed-basic"></i>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -395,23 +392,18 @@
 									<div class="name">Pro</div>
 									<div class="amount">
 										<span class="dollar">$</span>
-										<span class="number">48</span>
+										<span class="number">15</span>
 										<span class="period">hour</span>
 									</div>
 									<div class="feature-list">
 										<ul>
-											<li>Web Development</li>
-											<li>Advetising</li>
-											<li>Game Development</li>
-											<li>Music Writing</li>
-											<li>Photography <strong>new</strong></li>
+											<li>Complex Web Development</li>
+											<li>Advanced Troubleshooting & Bugfixing</li>
+											<li>IOS & Android App Development</li>
+											<li>Node.js Development</li>
+											<li>Advanced Collaboration</li>
+											<li>Site Promotion & Digital Marketing</li>
 										</ul>
-									</div>
-									<div class="lnks">
-										<a href="#" class="lnk">
-											<span class="text">Buy Pro</span>
-											<i class="ion ion-speedometer"></i>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -444,7 +436,7 @@
 							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="fuct-item">
 									<div class="icon"><span class="ion ion-trophy"></span></div>
-									<div class="name">30+ Clients Satisfied</div>
+									<div class="name">20+ Clients Satisfied</div>
 								</div>
 							</div>
 
@@ -452,7 +444,7 @@
 							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="fuct-item">
 									<div class="icon"><span class="ion ion-coffee"></span></div>
-									<div class="name">50+ Languages and Techs known</div>
+									<div class="name">30+ Languages and Techs known</div>
 								</div>
 							</div>
 
@@ -472,16 +464,16 @@
 					<!--
 						Clients
 					-->
-					<div class="content clients">
+					<!-- <div class="content clients"> -->
 
 						<!-- title -->
-						<div class="title">Clients</div>
+						<!-- <div class="title">Clients</div> -->
 
 						<!-- content -->
-						<div class="row client-items">
+						<!-- <div class="row client-items"> -->
 
 							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+							<!-- <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="client-item">
 									<div class="image">
 										<a target="_blank" href="https://www.google.com/">
@@ -489,10 +481,10 @@
 										</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+							<!-- <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="client-item">
 									<div class="image">
 										<a target="_blank" href="https://www.google.com/">
@@ -500,10 +492,10 @@
 										</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+							<!-- <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="client-item">
 									<div class="image">
 										<a target="_blank" href="https://www.google.com/">
@@ -511,10 +503,10 @@
 										</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+							<!-- <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="client-item">
 									<div class="image">
 										<a target="_blank" href="https://www.google.com/">
@@ -522,26 +514,26 @@
 										</a>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
-							<div class="clear"></div>
-						</div>
+							<!-- <div class="clear"></div> -->
+						<!-- </div> -->
 
-					</div>
+					<!-- </div> -->
 
 					<!--
 						Testimonials
 					-->
-					<div class="content testimonials">
+					<!-- <div class="content testimonials"> -->
 
 						<!-- title -->
-						<div class="title">Testimonials</div>
+						<!-- <div class="title">Testimonials</div> -->
 
 						<!-- content -->
-						<div class="row testimonials-items">
+						<!-- <div class="row testimonials-items"> -->
 
 							<!-- client item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+							<!-- <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
 								<div class="revs-carousel default-revs">
 									<div class="owl-carousel">
 										<div class="item">
@@ -591,12 +583,12 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
-							<div class="clear"></div>
-						</div>
+							<!-- <div class="clear"></div> -->
+						<!-- </div> -->
 
-					</div>
+					<!-- </div> -->
 
 				</div>
 			</div>
@@ -626,27 +618,35 @@
 								</div>
 								<div class="resume-items">
 									<div class="resume-item border-line-h active">
-										<div class="date">2013 - Present</div>
-										<div class="name">Art Director</div>
-										<div class="company">Facebook Inc.</div>
+										<div class="date">2020 - Present</div>
+										<div class="name">Senior Software Engineer</div>
+										<div class="company">Collegedunia Web Pvt. Ltd.</div>
 										<p>
-											Collaborate with creative and development teams on the execution of ideas.
+											Develop and Manage Complex Web Projects and API's while handling devOps work.
 										</p>
 									</div>
 									<div class="resume-item border-line-h">
-										<div class="date">2011 - 2012</div>
-										<div class="name">Front-end Developer</div>
-										<div class="company">Google Inc.</div>
+										<div class="date">2018 - 2020</div>
+										<div class="name">Tech Lead</div>
+										<div class="company">RS Sample Junction LLP.</div>
 										<p>
-											Monitored technical aspects of the front-end delivery for several projects.
+											Handling all technical needs for organisation and developing internal applications related to Market Resarch Industry.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2015 - 2018</div>
+										<div class="name">Software Developer</div>
+										<div class="company">TRS Software Solutions Pvt. Ltd.</div>
+										<p>
+											Developed complex web projects and api's in latest web technologies.
 										</p>
 									</div>
 									<div class="resume-item">
-										<div class="date">2009 - 2010</div>
-										<div class="name">Senior Developer</div>
-										<div class="company">Abc Inc.</div>
+										<div class="date">2014 - 2015</div>
+										<div class="name">Digital Marketing Executive</div>
+										<div class="company">CollegeDunia Web Pvt. Ltd</div>
 										<p>
-											Optimize website performance using latest technology.
+											Promotion of Brand and Products via different marketing strategies.
 										</p>
 									</div>
 								</div>
@@ -660,27 +660,28 @@
 								</div>
 								<div class="resume-items">
 									<div class="resume-item border-line-h">
-										<div class="date">2006 - 2008</div>
-										<div class="name">Art University</div>
-										<div class="company">New York</div>
+										<div class="date">2014 - 2016</div>
+										<div class="name">MCA</div>
+										<div class="company">Paris</div>
 										<p>
-											Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri
+											Master's Degree in Computer Application Ignou, Delhi
 										</p>
 									</div>
 									<div class="resume-item border-line-h">
-										<div class="date">2005 - 2006</div>
-										<div class="name">Programming Course</div>
-										<div class="company">Paris</div>
+										<div class="date">2010 - 2013</div>
+										<div class="name">BCA</div>
+										<div class="company">IGNOU</div>
 										<p>
-											Coursework - Git, WordPress, Javascript, iOS, Android.
+											Bachelor's Degree in Computer Application Ignou, Delhi
 										</p>
 									</div>
+									
 									<div class="resume-item">
-										<div class="date">2004 - 2005</div>
-										<div class="name">Web Design Course</div>
+										<div class="date">2008 - 2009</div>
+										<div class="name">DCA</div>
 										<div class="company">London</div>
 										<p>
-											Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript
+											Diploma in Computer Application, Delhi
 										</p>
 									</div>
 								</div>
@@ -707,29 +708,29 @@
 								<div class="skills-list">
 									<div class="skill-title border-line-h">
 										<div class="icon"><i class="ion ion-easel"></i></div>
-										<div class="name">Design</div>
+										<div class="name">Development</div>
 									</div>
 									<ul>
 										<li class="border-line-h"> 
-											<div class="name">Web Design</div>
+											<div class="name">PHP Development</div>
 											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
+												<div class="percentage" style="width:98%;"></div>
 											</div>
 										</li>
 										<li class="border-line-h"> 
-											<div class="name">Write Music</div>
+											<div class="name">Node.Js</div>
 											<div class="progress">
-												<div class="percentage" style="width:65%;"></div>
+												<div class="percentage" style="width:80%;"></div>
 											</div>
 										</li>
 										<li class="border-line-h"> 
-											<div class="name">Photoshop</div>
+											<div class="name">MySql / Redis / MongoDB</div>
 											<div class="progress">
-												<div class="percentage" style="width:75%;"></div>
+												<div class="percentage" style="width:95%;"></div>
 											</div>
 										</li>
 										<li>
-											<div class="name">Graphic Design</div>
+											<div class="name">Web Designing</div>
 											<div class="progress">
 												<div class="percentage" style="width:85%;"></div>
 											</div>
@@ -743,31 +744,31 @@
 								<div class="skills-list dotted">
 									<div class="skill-title border-line-h">
 										<div class="icon"><i class="ion ion-flag"></i></div>
-										<div class="name">Languages</div>
+										<div class="name">Technologies</div>
 									</div>
 									<ul>
 										<li class="border-line-h"> 
-											<div class="name">English</div>
+											<div class="name">PHP</div>
 											<div class="progress">
 												<div class="percentage" style="width:90%;"></div>
 											</div>
 										</li>
 										<li class="border-line-h"> 
-											<div class="name">German</div>
+											<div class="name">Node.Js</div>
 											<div class="progress">
-												<div class="percentage" style="width:60%;"></div>
+												<div class="percentage" style="width:85%;"></div>
 											</div>
 										</li>
 										<li class="border-line-h"> 
-											<div class="name">Italian</div>
+											<div class="name">Database</div>
 											<div class="progress">
-												<div class="percentage" style="width:30%;"></div>
+												<div class="percentage" style="width:90%;"></div>
 											</div>
 										</li>
-										<li> 
-											<div class="name">French</div>
-											<div class="progress ">
-												<div class="percentage" style="width:70%;"></div>
+										<li class="border-line-h"> 
+											<div class="name">Server & Scripting</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
 											</div>
 										</li>
 									</ul>
@@ -783,21 +784,21 @@
 									</div>
 									<ul>
 										<li> 
-											<div class="name">WordPress</div>
+											<div class="name">PHP / MySql</div>
 											<div class="progress p90">
-												<span>90%</span>
+												<span>95%</span>
 											</div>
 										</li>
 										<li> 
-											<div class="name">PHP / MYSQL</div>
+											<div class="name">Node.Js / Javasctipt</div>
 											<div class="progress p75">
-												<span>75%</span>
+												<span>85%</span>
 											</div>
 										</li>
 										<li> 
-											<div class="name">Angular / JavaScript</div>
+											<div class="name">Shell & Python Scripting</div>
 											<div class="progress p85">
-												<span>85%</span>
+												<span>65%</span>
 											</div>
 										</li>
 										<li> 
@@ -819,25 +820,25 @@
 									</div>
 									<ul>
 										<li> 
-											<div class="name">Website hosting</div>
+											<div class="name">PHP Development</div>
 										</li>
 										<li> 
-											<div class="name">iOS and android apps</div>
+											<div class="name">iOS & android apps</div>
 										</li>
 										<li> 
-											<div class="name">Create logo design</div>
+											<div class="name">API Development</div>
 										</li>
 										<li> 
-											<div class="name">Design for print</div>
+											<div class="name">Web Designing</div>
 										</li>
 										<li> 
-											<div class="name">Modern and mobile-ready</div>
+											<div class="name">Project Management</div>
 										</li>
 										<li> 
-											<div class="name">Advertising services include</div>
+											<div class="name">Server Deployment & Hosting</div>
 										</li>
 										<li> 
-											<div class="name">Graphics and animations</div>
+											<div class="name">Bug Fixing & Troubleshooting</div>
 										</li>
 										<li> 
 											<div class="name">Search engine marketing</div>
@@ -874,13 +875,13 @@
 								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
 							</div>
 							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+								<label><input type="radio" name="fl_radio" value="photo" />Web</label>
 							</div>
 							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="video" />Video</label>
+								<label><input type="radio" name="fl_radio" value="video" />Mobile</label>
 							</div>
 							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="music" />Music</label>
+								<label><input type="radio" name="fl_radio" value="music" />API</label>
 							</div>
 							<div class="f_btn">
 								<label><input type="radio" name="fl_radio" value="design" />Design</label>
@@ -902,11 +903,49 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/work1.webp" class="name has-popup-image">Motorcycle Helmet</a>
-										<div class="category">Photo</div>
+										<a href="images/works/work1.webp" class="name has-popup-image">Keysearch</a>
+										<div class="category">Web</div>
 									</div>
 								</div>
 							</div>
+
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work1.webp" class="has-popup-image">
+											<img src="images/works/work1.webp" class="lazyload" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work1.webp" class="name has-popup-image">SJ Apace</a>
+										<div class="category">Web</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work1.webp" class="has-popup-image">
+											<img src="images/works/work1.webp" class="lazyload" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work1.webp" class="name has-popup-image">SnyderGallery</a>
+										<div class="category">Web</div>
+									</div>
+								</div>
+							</div>
+
+							
 
 							<!-- work item video -->
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
@@ -920,7 +959,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="https://vimeo.com/97102654" class="name has-popup-video">Minimalism Shapes</a>
+										<a href="https://vimeo.com/97102654" class="name has-popup-video">FootlooseNoMore</a>
 										<div class="category">Video</div>
 									</div>
 								</div>
@@ -938,7 +977,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="#" class="name has-popup">Staircase</a>
+										<a href="#" class="name has-popup">SJ Panel</a>
 										<div class="category">Music</div>
 									</div>
 								</div>
