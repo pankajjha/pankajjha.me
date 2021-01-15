@@ -20,18 +20,21 @@
   "author": "Pankaj Jha <mail@pankajjha.me> (https://pankajjha.me)",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "workbox-background-sync": "^5.1.4",
+    "workbox-core": "^5.1.4",
+    "workbox-precaching": "^5.1.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.12",
-    "browser-sync-webpack-plugin": "^2.0.1",
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.5",
+    "laravel-mix": "^5.0.9",
     "node-sass": "^4.14.1",
-    "resolve-url-loader": "^3.1.0",
+    "resolve-url-loader": "^3.1.2",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.44.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
 }

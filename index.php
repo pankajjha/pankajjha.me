@@ -96,7 +96,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
 	<link rel="manifest" href="images/favicons/site.webmanifest">
 
-    <link rel="stylesheet" href="<?php echo mix('css/app.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo mix('/css/app.css'); ?>" />
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155183199-1"></script>
@@ -106,6 +106,15 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-155183199-1');
+	</script>
+	<script>
+		// Check that service workers are supported
+		if ('serviceWorker' in navigator) {
+			// Use the window load event to keep the page load performant
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/public/js/sw.js');
+			});
+		}
 	</script>
 </head>
 
@@ -1361,6 +1370,7 @@
 		Main Scripts
 	-->
 	<script src="js/scripts.js"></script>
+	
 	
 </body>
 

@@ -25,6 +25,7 @@ if (! function_exists('mix')) {
         static $manifest;
         $publicFolder = '/public';
         $rootPath = $_SERVER['DOCUMENT_ROOT'];
+        $rootPath = '';
         $publicPath = $rootPath . $publicFolder;
         if ($manifestDirectory && ! starts_with($manifestDirectory, '/')) {
             $manifestDirectory = "/{$manifestDirectory}";
@@ -51,7 +52,7 @@ if (! function_exists('mix')) {
             );
         }
         return file_exists($publicPath . ($manifestDirectory.'/hot'))
-            ? "http://localhost:8080{$manifest[$path]}"
+            ? "http://pankajjha.test/public{$manifest[$path]}"
             : $manifestDirectory.$manifest[$path];
     }
 }
