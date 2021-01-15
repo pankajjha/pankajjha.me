@@ -31,4 +31,4 @@ jobs:
           username: ${{secrets.SERVER_USERNAME}}
           host: ${{ secrets.SERVER_IP }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: 'cd ${{secrets.SERVER_GIT_DIR}}/ && sh server_deploy.sh ${{secrets.WORK_DIRECTORY}}'
+          script: 'cd ${{secrets.SERVER_GIT_DIR}}/ && sh server_deploy.sh -w "${{secrets.WORK_DIRECTORY}}"'
