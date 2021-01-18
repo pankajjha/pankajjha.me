@@ -1,5 +1,5 @@
 <?php
-    require_once 'vendor/autoload.php';
+    require_once '../vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +112,7 @@
 		if ('serviceWorker' in navigator) {
 			// Use the window load event to keep the page load performant
 			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/public/js/sw.js');
+				navigator.serviceWorker.register('<?php echo mix('/js/sw.js'); ?>');
 			});
 		}
 	</script>
@@ -1369,10 +1369,10 @@
 	<!--
 		Main Scripts
 	-->
-	<script src="js/scripts.js"></script>
+	<script src="<?php echo mix('/js/scripts.js'); ?>"></script>
+	<script src="<?php echo mix('/js/app.js'); ?>"></script>
 	
 	
 </body>
 
-<!-- Mirrored from bslthemes.com/ryan/demo/index-new-no-photo.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Dec 2019 15:37:59 GMT -->
 </html>
