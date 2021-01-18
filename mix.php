@@ -1,4 +1,7 @@
 <?php
+require_once 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 if (! function_exists('starts_with')) {
 // Function to check string starting
@@ -23,7 +26,7 @@ if (! function_exists('mix')) {
     function mix($path, $manifestDirectory = '')
     {
         static $manifest;
-        $publicFolder = '';
+        $publicFolder = ( isset($_ENV['APP_ENV']) && $_ENV['APP_ENV'] == 'production' )?'/public':'';
         $rootPath = $_SERVER['DOCUMENT_ROOT'];
         $publicPath = $rootPath . $publicFolder;
         if ($manifestDirectory && ! starts_with($manifestDirectory, '/')) {
@@ -53,8 +56,10 @@ if (! function_exists('mix')) {
             );
         }
         
+        $appUrl = (isset($_ENV['APP_URL']))?$_ENV['APP_URL']:'https://pankajjha.me';
+
         return file_exists($publicPath . ($manifestDirectory.'/hot'))
-            ? "http://pankajjha.test{$manifest[$path]}"
+            ? $appUrl."{$manifest[$path]}"
             : $manifestDirectory.$manifest[$path];
     }
 }

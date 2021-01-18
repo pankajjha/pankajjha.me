@@ -6,7 +6,9 @@
             "email": "pankajjha.145@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "vlucas/phpdotenv": "^5.2"
+    },
     "autoload": {
         "files": ["mix.php"]
     }
