@@ -34,7 +34,7 @@ if (! function_exists('mix')) {
         }
 
         if (! $manifest) {
-            if (! file_exists($manifestPath = ($rootPath . $manifestDirectory.'/mix-manifest.json') )) {
+            if (! file_exists($manifestPath = ($publicPath . $manifestDirectory.'/mix-manifest.json') )) {
                 if(! file_exists($manifestPath = ( __DIR__ .'/mix-manifest.json') )){
                     throw new Exception('The Mix manifest does not exist.');
                 }
@@ -47,7 +47,7 @@ if (! function_exists('mix')) {
         if (! starts_with($path, '/')) {
             $path = "/{$path}";
         }
-        $path = $publicFolder . $path;
+        //$path = $publicFolder . $path;
         
         if (! array_key_exists($path, $manifest)) {
             throw new Exception(

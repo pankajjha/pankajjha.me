@@ -906,6 +906,7 @@ self.addEventListener('install', function (event) {
   }))());
 });
 self.addEventListener('activate', function (event) {
+  console.log('activate start...');
   event.waitUntil(_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
       while (1) {
