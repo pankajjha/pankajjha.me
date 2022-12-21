@@ -1,98 +1,8 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./resources/js/scripts.js":
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
 /*!*********************************!*\
   !*** ./resources/js/scripts.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
 /*
 *   Author: beshleyua
 *   Author URL: http://themeforest.net/user/beshleyua
@@ -101,6 +11,7 @@
 /*
 	Preloader
 */
+
 $(window).on("load", function () {
   var preload = $('.preloader');
   preload.find('.spinner').fadeOut(function () {
@@ -109,12 +20,13 @@ $(window).on("load", function () {
 });
 $(function () {
   'use strict';
+
   /*
   	Vars
   */
-
   var width = $(window).width();
   var height = $(window).height();
+
   /*
   	Header Menu Desktop
   */
@@ -132,20 +44,17 @@ $(function () {
     var menu_items = $('.top-menu li');
     var menu_item = $(this).closest('li');
     var d_lnk = $('.lnks .lnk.discover');
-
     if (width >= 1024) {
       /* if desktop */
       if (!menu_item.hasClass('active') & width > 1023 & $('#home-card').length) {
         /* close card items */
         menu_items.removeClass('active');
         container.find(card_items).removeClass('animated ' + animation_in);
-
         if ($(container).hasClass('opened')) {
           container.find(card_items).addClass('animated ' + animation_out);
         }
+
         /* open card item */
-
-
         menu_item.addClass('active');
         container.addClass('opened');
         container.find(card_item).removeClass('animated ' + animation_out);
@@ -156,21 +65,17 @@ $(function () {
       }
     }
     /* if mobile */
-
-
     if (width < 1024 & $('#home-card').length) {
       /* scroll to section */
       $('body,html').animate({
         scrollTop: h - 76
       }, 800);
     }
-
     return false;
   });
   $(window).on('resize', function () {
     var width = $(window).width();
     var height = $(window).height();
-
     if (width < 1024) {
       $('.card-inner').removeClass('hidden');
       $('.card-inner').removeClass('fadeOutLeft');
@@ -185,7 +90,6 @@ $(function () {
         $('.top-menu ul li a').each(function () {
           var currLink = $(this);
           var refElement = $(currLink.attr("href"));
-
           if (refElement.offset().top - 76 <= scrollPos) {
             $('.top-menu ul li').removeClass("active");
             currLink.closest('li').addClass("active");
@@ -198,7 +102,6 @@ $(function () {
       $('.card-inner .card-wrap').attr('style', '');
     } else {
       $($('.top-menu li.active a').attr('href')).addClass('active');
-
       if (!$('.page').hasClass('new-skin') && width > 1024) {
         $('.card-inner .card-wrap').slimScroll({
           height: '570px'
@@ -206,6 +109,7 @@ $(function () {
       }
     }
   });
+
   /*
   	Smoothscroll
   */
@@ -216,7 +120,6 @@ $(function () {
       $('.top-menu ul li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-
         if (refElement.offset().top - 76 <= scrollPos) {
           $('.top-menu ul li').removeClass("active");
           currLink.closest('li').addClass("active");
@@ -224,28 +127,28 @@ $(function () {
       });
     });
   }
+
   /*
   	slimScroll
   */
-
 
   if (!$('.page').hasClass('new-skin') && width > 1024) {
     $('.card-inner .card-wrap').slimScroll({
       height: '570px'
     });
   }
+
   /*
   	Hire Button
   */
 
-
   $('.lnks').on('click', '.lnk.discover', function () {
     $('.top-menu a[href="#contacts-card"]').trigger('click');
   });
+
   /*
   	Initialize Portfolio
   */
-
   var $container = $('.grid-items');
   $container.imagesLoaded(function () {
     $container.isotope({
@@ -253,10 +156,10 @@ $(function () {
       itemSelector: '.grid-item'
     });
   });
+
   /*
   	Filter items on button click
   */
-
   $('.filter-button-group').on('click', '.f_btn', function () {
     var filterValue = $(this).find('input').val();
     $container.isotope({
@@ -265,10 +168,10 @@ $(function () {
     $('.filter-button-group .f_btn').removeClass('active');
     $(this).addClass('active');
   });
+
   /*
   	Gallery popup
   */
-
   if (/\.(?:jpg|jpeg|gif|png)$/i.test($('.gallery-item:first a').attr('href'))) {
     $('.gallery-item a').magnificPopup({
       gallery: {
@@ -279,21 +182,20 @@ $(function () {
       mainClass: 'mfp-fade'
     });
   }
+
   /*
   	Media popup
   */
-
-
   $('.has-popup-media').magnificPopup({
     type: 'inline',
     overflowY: 'auto',
     closeBtnInside: true,
     mainClass: 'mfp-fade popup-box-inline'
   });
+
   /*
   	Image popup
   */
-
   $('.has-popup-image').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -302,10 +204,10 @@ $(function () {
       verticalFit: true
     }
   });
+
   /*
   	Video popup
   */
-
   $('.has-popup-video').magnificPopup({
     disableOn: 700,
     type: 'iframe',
@@ -328,10 +230,10 @@ $(function () {
       }
     }
   });
+
   /*
   	Music popup
   */
-
   $('.has-popup-music').magnificPopup({
     disableOn: 700,
     type: 'iframe',
@@ -340,10 +242,10 @@ $(function () {
     fixedContentPos: false,
     mainClass: 'mfp-fade'
   });
+
   /*
   	Gallery popup
   */
-
   $('.has-popup-gallery').on('click', function () {
     var gallery = $(this).attr('href');
     $(gallery).magnificPopup({
@@ -359,6 +261,7 @@ $(function () {
     }).magnificPopup('open');
     return false;
   });
+
   /*
   	Validate Contact Form
   */
@@ -402,6 +305,7 @@ $(function () {
       });
     }
   });
+
   /*
   	Validate Commect Form
   */
@@ -418,6 +322,7 @@ $(function () {
     success: "valid",
     submitHandler: function submitHandler() {}
   });
+
   /*
   	Google Maps
   */
@@ -425,11 +330,10 @@ $(function () {
   if ($('#map').length) {
     initMap();
   }
+
   /*
   	Tesimonials Carousel
   */
-
-
   var revs_slider = $(".revs-carousel.default-revs .owl-carousel");
   revs_slider.owlCarousel({
     margin: 0,
@@ -455,6 +359,7 @@ $(function () {
     nav: false,
     dots: true
   });
+
   /*
   	New JS
   */
@@ -463,24 +368,25 @@ $(function () {
     /*
     	Dotted Skills Line On Resize Window
     */
+
     var skills_dotted = $('.skills-list.dotted .progress');
     var skills_dotted_w = skills_dotted.width();
-
     if (skills_dotted.length) {
       skills_dotted.find('.percentage .da').css({
         'width': skills_dotted_w + 1
       });
     }
+
     /*
     	Testimonials Carousel On Resize Window
     */
-
 
     var revs_slider = $(".revs-carousel .owl-carousel");
     revs_slider.find('.revs-item').css({
       'max-width': revs_slider.width()
     });
   });
+
   /*
   	Dotted Skills Line
   */
@@ -488,7 +394,6 @@ $(function () {
   function skills() {
     var skills_dotted = $('.skills-list.dotted .progress');
     var skills_dotted_w = skills_dotted.width();
-
     if (skills_dotted.length) {
       skills_dotted.append('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
       skills_dotted.find('.percentage').append('<span class="da"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
@@ -497,25 +402,23 @@ $(function () {
       });
     }
   }
-
   setTimeout(skills, 1000);
+
   /*
   	Circle Skills Line
   */
 
   var skills_circles = $('.skills-list.circles .progress');
-
   if (skills_circles.length) {
     skills_circles.append('<div class="slice"><div class="bar"></div><div class="fill"></div></div>');
   }
+
   /*
   	Wrap First Title Word
   */
 
-
   $('.content .title').each(function (index) {
     var title = $(this).text().split(' ');
-
     if (title.length > 1) {
       var firstWord = title[0];
       var replaceWord = '<span class="first-word">' + firstWord + '</span>';
@@ -526,13 +429,13 @@ $(function () {
     }
   });
 });
+
 /*
 	Google Map Options
 */
 
 function initMap() {
   var myLatlng = new google.maps.LatLng(40.773328, -73.960088); // <- Your latitude and longitude
-
   var styles = [{
     "featureType": "water",
     "stylers": [{
@@ -562,23 +465,10 @@ function initMap() {
     title: 'We are here!'
   });
 }
-
 (function ($) {
-  'use strict'; // load html
+  'use strict';
+
+  // load html
 })(jQuery);
-
-/***/ }),
-
-/***/ 1:
-/*!***************************************!*\
-  !*** multi ./resources/js/scripts.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! /Users/pankajjha/development/htdocs/custom-repositories/pankajjha_me/resources/js/scripts.js */"./resources/js/scripts.js");
-
-
-/***/ })
-
-/******/ });
+/******/ })()
+;
